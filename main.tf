@@ -46,7 +46,7 @@ locals {
 
 // Check to make sure the highest level module has no remaining values that weren't recursed through
 module "asset_sufficient_levels" {
-  source = "git@github.com:alisonjenkins/terraform-null-assertion.git/?ref=add-opentofu-support"
+  source = "https://github.com/alisonjenkins/terraform-null-assertion/archive/refs/heads/add-opentofu-support.zip"
   # version       = "~>0.2.7"
   error_message = "Deepmerge has recursed to insufficient depth (${length(local.modules)} levels is not enough)"
   condition = length([
