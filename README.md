@@ -1,3 +1,14 @@
+# This is a temporary fork
+
+Please swap to using https://github.com/Invicton-Labs/terraform-null-deepmerge when the following 2 PRs are merged:
+
+https://github.com/Invicton-Labs/terraform-null-deepmerge/pull/14
+https://github.com/Invicton-Labs/terraform-null-assertion/pull/9
+
+The reason for this repo existing is to ensure that we are able to progress while waiting for these PRs to be merged.
+
+If they never are please just stay using this version of the module.
+
 # Deepmerge
 
 This module performs a deep map merge of standard Terraform maps/objects. It is functionally similar to the built-in `merge` function, except that it will merge maps at the same depth instead of overwriting them. It can handle maps with a depth up to 100 (see commented-out code at the bottom of `main.tf` if you want to modify it to handle deeper maps).
